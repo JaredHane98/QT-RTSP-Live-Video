@@ -75,12 +75,14 @@ Q_DECLARE_METATYPE(cv::Mat)
 
 int main(int argc, char *argv[])
 {
+    assert(argc > 1 && "Provide IP address to the program");
+
     QApplication app(argc, argv);
     qRegisterMetaType<cv::Mat>();
 
     StreamInterface interface;
-    runGStreamer("rtsp://192.168.68.55:8554/test", &interface);
-    TCPManagerClient::start("192.168.68.55", "1234");
+    runGStreamer(std::string("rtsp://") + argv[1] + ":8554/test", &interface);
+    TCPManagerClient::start(argv[1], "1234");
 
 
     MainWindow window;
