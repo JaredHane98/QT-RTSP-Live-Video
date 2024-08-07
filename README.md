@@ -1,4 +1,4 @@
-An example repository to showcase using QT to provide live video from a video stream, and Boost ASIO to transmit hardware information about connected devices. In this case a BQ76952 and D435 RealSense camera is connected to Nvidia-Jetson.
+An example repository showcasing using QT to display live feed from a video stream, and information from microcontrollers. For this example a B76952, and D435 was used.
 
 Dependencies
 
