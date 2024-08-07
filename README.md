@@ -7,4 +7,5 @@ Dependencies
 
 --QT - Tested with 5.15
 
-![QT_LIBRARY](https://github.com/user-attachments/assets/afd50703-29df-41fa-89d1-2db236affff0)
+
+![QT_LIBRARY](https://github.com/user-attachments/assets/1528aedf-1c28-4e21-b334-b7aa48426e2a)
