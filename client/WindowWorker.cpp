@@ -14,11 +14,19 @@ QTMainWindowWorker::~QTMainWindowWorker()
 void QTMainWindowWorker::updateBMSTree(const QString& header, std::vector<std::shared_ptr<ModuleValue>>& values)
 {
     uint16_t bms_value; // all BMS values uint16_t
+    QString value_name, value_string;
+
     for(auto value : values)
     {
         value->copyData(&bms_value, sizeof(uint16_t));
-        const QString value_name = QString::fromStdString(value->getName());
-        const QString value_string = QString::number(bms_value);
+        value_name = QString::fromStdString(value->getName());
+        if(value_name.contains("Cell_Voltage"))
+            value_string = QString::number((float)bms_value / 1000.0f) + "V";
+        else if(value_name.contains("Pack_Voltage") || value_name.contains("Stack_Voltage"))
+            value_string = QString::number((float)bms_value / 100.0f) + "V";
+        else 
+            value_string = QString::number(bms_value);
+
         emit updateTreeItem(header, value_name, value_string);
     }
 }
