@@ -2,11 +2,11 @@ An example repository to showcase using QT to provide live video from a video st
 
 Dependencies
 
--OpenCV - Tested with 4.8.0
+- **OpenCV** - Tested with 4.8.0
 
--GStreamer - Tested wtih 14.5
+- **GStreamer** - Tested wtih 14.5
 
--QT - Tested with 5.15
+- **QT** - Tested with 5.15
 
 
 ![QT_LIBRARY](https://github.com/user-attachments/assets/1528aedf-1c28-4e21-b334-b7aa48426e2a)
