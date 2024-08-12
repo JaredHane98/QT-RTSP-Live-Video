@@ -1,4 +1,4 @@
-An example repository showcasing using QT to display live feed from a video stream, and information from microcontrollers. For this example a B76952, and D435 was used.
+A repository showcasing using QT to display live video from a stream, and display information microcontrollers. For this example a B76952, and D435 was used.
 
 Dependencies
 
