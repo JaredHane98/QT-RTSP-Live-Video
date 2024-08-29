@@ -1,4 +1,4 @@
-A repository showcasing using QT to display live video from a stream, and display information microcontrollers. For this example a B76952, and D435 was used.
+A repository demonstrating the use of Qt for displaying live video streams and presenting data from microcontrollers. This example features the B76952 microcontroller and the D435 camera.
 
 Dependencies
 
